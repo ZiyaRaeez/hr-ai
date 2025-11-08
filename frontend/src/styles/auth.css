@@ -1,0 +1,53 @@
+.icon-padding {
+  padding: 8px;
+}
+
+input {
+  transition: all 0.2s ease;
+}
+
+input::placeholder {
+  color: #9ca3af; /* Tailwind gray-400 */
+  opacity: 1;
+  line-height: 1.5 !important;
+}
+
+input:focus {
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2); /* purple glow */
+}
+
+/* ---- Buttons ---- */
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+button {
+  transition: all 0.2s ease;
+}
+
+/* ---- reCAPTCHA alignment ---- */
+.g-recaptcha {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+/* ---- Links ---- */
+a {
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Responsive tweaks for smaller screens ---- */
+@media (max-width: 640px) {
+  .auth-container {
+    padding: 2rem 1rem !important;
+  }
+  .auth-card {
+    padding: 2rem 1.5rem !important;
+  }
+}
